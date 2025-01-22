@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Head Lesoon</title>
+    <style>
+        .block {
+            background-color: rgb(18, 4, 4);
+            color: white;
+        }
+
+        .inline {
+            display: inline;
+            width: 100px;
+            height: 100px;
+            background-color: brown
+        }
+
+        span {
+            color: black;
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
     <!-- p - paragraph -->
@@ -21,5 +39,61 @@
         <h4>Heading 4</h4>
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
+
+    <!-- block elements and inline element -->
+     <!-- block element -->
+
+     <p class="block">Hello</p> <p class="block">World</p>
+
+     <!-- inline element -->
+     <span class="inline">Hi</span> 
+     <span class="inline">World</span>   
+
+     <p>Lorem ipsum, dolor sit <span>HTML</span> amet consectetur adipisicing elit. Illo sed maxime ratione debitis aut reprehenderit dolores repellendus? Illum odit suscipit consequatur, dolorem eligendi fugiat sint eum eveniet blanditiis sequi est?</p>
+
+     <p>Lorem ipsum dolor sit <div>HTML</div>amet consectetur adipisicing elit. Quisquam debitis numquam exercitationem saepe illo placeat corporis iusto, explicabo, ipsam iste, porro deleniti officia et repellat? Iste autem vel voluptate eos?</p>
+
+     <!-- List -->
+      <!-- order list -->
+       <!-- type ->1,A,a,I,i -->
+       <!-- start -> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,... -->
+        <ol type="a" start="15">
+            <li>ICS</li>
+            <li>Git & Github</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <!-- unorder list -->
+         <!-- type -> disc, circle, square -->
+        <ul type="disc" style="list-style-type: circle; color: red;">
+            <li>ICS</li>
+            <li>Git & Github</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <!-- description list -->
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheet</dd>
+
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+        </dl>
+
+        <a href="intro.html" style="display: block;" target="_blank">intro lesson</a>
+        <a href="index.html" style="display: block;" target="_blank">HTML</a>
+        <a href="head.html" style="display: flex;" target="_blank">head tag lesson</a>
+        <a href="body.html" style="display: contents;" target="_blank">body lesson</a>
+        <a href="https://www.google.com" style="display: block;" target="_blank">Google</a>
+        <a href="https://www.youtube.com" target="_blank">YouTube</a>
+
 </body>
 </html>
