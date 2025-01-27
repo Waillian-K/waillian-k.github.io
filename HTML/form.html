@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <p>Please fill in the form below:</p>
+    <hr>
+    <!-- method - get & post -->
+    <form action="request.php" method="get">
+        <label for="name">Name:</label>
+        <input type="text" name="student_name" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="student_email" id="email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="student_password" id="password">
+        <br>
+        <label for="number">Number:</label>
+        <input type="number" name="student_number" id="number" pattern="[0-9]{10}">
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="student_dob" id="dob">
+        <br>
+        <label for="passport">Passport Image:</label>
+        <input type="file" accept=".png,.jpg" name="student_passport" id="passport">
+        <br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
