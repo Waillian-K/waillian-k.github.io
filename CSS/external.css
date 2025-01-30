@@ -1,0 +1,35 @@
+h1{
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}
+p{
+    color: navy;
+    font-size: 20px;
+    text-align: center;
+    content: "This is a paragraph";
+    quotes: "“" "”";
+    background-color: rgb(204, 211, 204);
+    border: 1px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: dotted;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    image-rendering: pixelated;
+    text-shadow: 2px 2px 5px red;
+    white-space: pre-line;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-overflow: clip;
+    overflow-wrap: break-word;
+}
+small{
+    color: rgb(204, 211, 204);
+    font-size: 15px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: blueviolet;
+    border: 1px solid black;
+}
