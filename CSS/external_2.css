@@ -1,0 +1,25 @@
+/* universal selector */
+*{
+    color: brown;
+    font-weight: 20px;
+}
+
+/* tag & element selector */
+h1{
+    color: aquamarine;
+}
+
+/* attribute selector */
+a[title="google"]{
+    color: rgb(1, 18, 3);
+    display: block;
+    block-size: auto;
+    padding-block: 10px;
+    margin-block: 10px;
+    text-align: center;
+}
+
+input[type="text"]{
+    color: coral;
+}
+

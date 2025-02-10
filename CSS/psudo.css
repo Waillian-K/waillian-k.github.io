@@ -1,0 +1,23 @@
+h1{
+    color: red;
+}
+
+a:link{
+    color: blueviolet;
+}
+
+a:hover{
+    color: chartreuse;
+}
+
+a:visited{
+    color:chocolate;
+}
+
+a:active{
+    color: crimson;
+}
+
+:target{
+    color: brown;
+}

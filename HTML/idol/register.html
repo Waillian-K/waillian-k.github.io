@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>Registration Form</title>
 </head>
 <body>
-    <main>
-        <form action="">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
-            <br>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-            <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="phone-number">phone-number</label>
-            <input type="tel" name="phone-number" id="phone-number">
-            <br>
-            <button type="submit">Register</button>
-            <button type="reset">reset</button>
-            <br>
-            <a href="login.html">Login</a>
-        </form>
-    </main>
+    <hr>
+    <h2 align="center">Registration Form</h2> 
+    <form action="" method="post" align="center" border="1">
+        <i class="uil uil-user"></i>
+        <input type="text" id="username" name="username" required placeholder="Enter Your Username"><br><br>
+        
+        <i class="uil uil-envelope icon"></i>
+        <input type="email" id="email" name="email" required placeholder="Enter Your Email"><br><br>
+        
+        <i class="uil uil-lock icon"></i>
+        <input type="password" id="password" name="password" required placeholder="Enter Your Password"><br><br>
+        
+        <i class="uil uil-lock icon"></i>
+        <input type="password" id="confirm_password" name="confirm_password" required placeholder="Confirm_Password"><br><br>
+
+        <input type="checkbox" id="T&C" name="T&C" required>
+        <label for="T&C">I agree to the terms and conditions</label><br><br>
+        
+        <span>Already a member? </span>
+              <a href="login.html">Login Now</a><br><br>
+        <input type="submit" value="Register">
+    </form>
 </body>
 </html>

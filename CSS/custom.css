@@ -1,0 +1,122 @@
+h1{
+    text-align: center;
+    color: navy;
+    font-size: 30px;
+    font-weight: bold;
+}
+img{
+    width: 500px;
+    height: 300px;
+}
+.fl{
+    text-decoration: solid;
+    color: saddlebrown;
+    font-size: 20px;
+    font-weight: bold;
+}
+.float-left img{
+    float: left;
+    margin: 10px;
+
+}
+.clear{
+    clear: both;
+}
+.float-right img{
+    float: right;
+    margin: 10px;
+}
+
+/* Grid */
+
+.grid_1 div , .grid_2 div , .grid_3 div , .grid_4 div , .grid_5 div , .grid_6 div{
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+.grid_1 , .grid_2 , .grid_3 , .grid_4 , .grid_5 , .grid_6{
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+.grid_5, .grid_6{
+    grid-gap: 20px;
+}
+.grid_2 {
+    grid-column-gap: 20px;
+}
+.grid_3 {
+    grid-row-gap: 20px;
+}
+.grid_4 {
+    grid-gap: 20px;
+}
+.column_add {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.row_add {
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+
+.font1 {
+    font-family: "42dot Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+@font-face {
+    font-family: "bank-gothic";
+    src: url(BankGothic/Bold.ttf);
+}
+.font2 {
+    font-family: "bank-gothic";
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.relative_parent{
+    border: #ccc 1px solid;
+    width: 1000px;
+    height: 500px;
+}
+.relative{
+    border: #ccc 1px solid;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 150px;
+}
+.absolute_parent{
+    border: #ccc 1px solid;
+    width: 1000px;
+    height: 500px;
+}
+.absolute{
+    border: #ccc 1px solid;
+    width: 500px;
+    height: 200px;
+    top: 100px;
+    left: 150px;
+}
+
+.fixed_parent{
+    border: #ccc 1px solid;
+    width: 1000px;
+    height: 500px;
+}
+.fixed{
+    border: #ccc 1px solid;
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    top: 100px;
+    left: 150px;
+    background-color: black;
+}

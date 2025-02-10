@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
     <title>logIn</title>
 </head>
 <body>
-    <aside>
+    <aside align="right">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="MoviesList.html">Movies Lists</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
+            <a href="index.html">Home |</a>
+            <a href="MoviesList.html">Movies Lists |</a>
+            <a href="login.html">Login |</a>
+            <hr>
         </nav>
     </aside>
-    <main>
-        <form action="">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
-            <br>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-            <br>
-            <button type="submit">Login</button>
-            <button type="reset">reset</button>
-            <br>
-            <a href="register.html">Register</a>
-        </form>
+    <main align="center">
+    <h3>Login</h3>
+
+          <form action="" align="center">
+            <i class="uil uil-envelope icon"></i>
+            <input type="text" placeholder="Enter your email" required /><br><br>
+            
+            <i class="uil uil-lock icon"></i>
+            <input type="password" class="password" placeholder="Enter your password" required />
+            <i class="uil uil-eye-slash showHidePw"></i><br><br><hr>
+            
+            <input type="checkbox">
+            <label for="logCheck" class="text">Remember me</label>
+            <a href="">Forgot password?</a><br><br>
+
+            <input type="button" value="Login" /><br><br>
+          </form>
+
+            <span align="center">Don't have an account</span>
+              <a href="register.html">Signup Now</a>
     </main>
 </body>
 </html>
