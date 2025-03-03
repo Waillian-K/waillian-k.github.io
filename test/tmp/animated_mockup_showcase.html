@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Mockup Showcase</title>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (typeof THREE === "undefined") {
+                console.error("Three.js failed to load.");
+                return;
+            }
+            
+            // Three.js Scene Setup
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            // 3D Object (Box as a Mockup Example)
+            const geometry = new THREE.BoxGeometry(2, 1, 0.1);
+            const material = new THREE.MeshStandardMaterial({ color: 0x0077ff, metalness: 0.7, roughness: 0.2 });
+            const mockup = new THREE.Mesh(geometry, material);
+            scene.add(mockup);
+
+            // Lighting
+            const light = new THREE.DirectionalLight(0xffffff, 1);
+            light.position.set(5, 5, 5);
+            scene.add(light);
+
+            camera.position.z = 3;
+
+            // Animation
+            function animate() {
+                requestAnimationFrame(animate);
+                mockup.rotation.y += 0.01;
+                renderer.render(scene, camera);
+            }
+            animate();
+
+            // GSAP Animation on Load
+            if (typeof gsap !== "undefined") {
+                gsap.from(mockup.scale, { duration: 1, x: 0, y: 0, z: 0, ease: "elastic.out(1, 0.5)" });
+            } else {
+                console.error("GSAP failed to load.");
+            }
+
+            // Resize Handling
+            window.addEventListener('resize', () => {
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+            });
+        });
+    </script>
+</body>
+</html>

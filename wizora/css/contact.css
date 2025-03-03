@@ -1,0 +1,95 @@
+/* From Uiverse.io by ClawHack1 */ 
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    margin: 20px;
+  }
+  
+  .contact-form label {
+    color: black;
+  }
+  
+  .contact-form .heading {
+    font-size: 24px;
+    color: black;
+    ;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #1a2d4247;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+
+  }
+  /* ------------------- */
+.info-i i{
+    font-size: 2em;
+    text-align: center;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.info{
+    padding: 30px 20px 0 20px;
+    display: grid;
+}
+.info-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.info-icon{
+    display: grid;
+    align-items: center;
+    justify-content: start;
+}
+
+.info-i{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+.info-i p{
+    color: #1a2d42ab;
+}
+.i{
+    font-size: 24px;
+    color: black;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+}
