@@ -164,10 +164,9 @@ a{
 .hero{
     position: relative;
     height: 100%;
-    height: 100%;
     background-image:url(../images/banner.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center ;
     background-repeat: no-repeat ;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -175,11 +174,12 @@ a{
 }   
 
 .hero_text{
-    display: grid;
-    align-content: center;
-    padding-right: 50px;
-    padding-left: 20px;
-    padding-top: 30px;
+  display: grid;
+  padding-right: 50px;
+  padding-left: 20px;
+  padding-top: 30px;
+  align-content: center;
+  justify-items: start;
 }
 
 .hero_text h3, .hero_text p{
@@ -187,12 +187,12 @@ a{
 }
 
 .hero_text h3{
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 .hero_text p{
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .btn{
@@ -231,9 +231,10 @@ a{
 }
 
 .hero_img{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* slider */
@@ -765,8 +766,7 @@ ul{
   background: #e2e6ef;
 }
 .product{
-
-    
+  align-items: center;
 }
 .card {
     width: 190px;
@@ -820,8 +820,50 @@ svg {
 }
    
 .text-body {
-    font-size: .9em;
+    font-size: .8em;
     padding-bottom: 10px;
+}
+.s-button {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  color: #0d1a29;
+  font-weight: bold;
+  transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0.6;
+}
+
+.s-button ::after {
+  content: '';
+  border-bottom: 3px double #202531;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  margin-top: -5px;
+  top: 0;
+  left: 5px;
+  visibility: hidden;
+  opacity: 1;
+  transition: .2s linear;
+}
+
+.s-button .s-icon {
+  transform: translateX(0%);
+  transition: .2s linear;
+  animation: attention 1.2s linear infinite;
+}
+
+.s-button :hover::after {
+  visibility: visible;
+  opacity: 0.7;
+  width: 90%;
 }
    
 /*Button*/
