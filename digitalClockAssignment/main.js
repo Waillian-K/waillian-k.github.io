@@ -35,10 +35,10 @@ function updateClock() {
     let yearNum = now.getFullYear();
 
     // Update date display
-    document.querySelector(".day-name").textContent = dayName;
-    document.querySelector(".day-num").textContent = dayNum;
-    document.querySelector(".month-name").textContent = monthName;
-    document.querySelector(".year-num").textContent = yearNum;
+    document.querySelector(".day-name") = dayName;
+    document.querySelector(".day-num") = dayNum;
+    document.querySelector(".month-name") = monthName;
+    document.querySelector(".year-num") = yearNum;
 }
 
 // Initial call to display clock immediately
