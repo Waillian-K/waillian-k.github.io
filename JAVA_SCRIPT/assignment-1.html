@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <span id="hour"></span>
+    <span id="minute"></span>
+    <span id="second">1</span>
+
+    <script>
+        setInterval(clock,1000)
+
+        function clock() {
+            let time = new Date()
+
+            let hour = document.getElementById('hour')
+            hour.innerHTML = time.getHours();
+
+            let minute = document.getElementById('minute');
+            let minuteValue = time.getMinutes();
+            let mm = (minuteValue < 10 ? '0' : '') + minuteValue.toString();
+            minute.innerHTML = mm;
+
+
+            let second = document.getElementById('second')
+            second.innerHTML = time.getSeconds(); 
+
+            hours = hours % 12 || 12;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String Lesson</h1>
+
+    <script>
+        let firstname = "Waillian";
+        let lastname = "Chit";
+        console.log(firstname , lastname);
+        console.log(lastname.length);//စာလုံးအရေအတွက်
+
+
+        let fullname = firstname +" "+ lastname
+        console.log(fullname);
+
+        console.log("My name is " + fullname );
+        
+        document.write("My name is " + fullname );
+        document.write(firstname + '<b>' + lastname + '</b><br>');
+        document.write('<b>' + fullname + '</b><br>')
+
+        document.write(`${firstname} <b> ${lastname} </b><br>`);
+        document.write(`My name is ${fullname}. I am 22 year old <br>`);
+
+        document.write(firstname.toUpperCase() + '<br>')
+        document.write(firstname.toLowerCase() + '<br>')
+
+        document.write(fullname.substr(12,4)+ "<br>" )
+
+        let myjob = "                 Senior                Developer               ";
+        document.write(myjob + '<br>')
+        
+        document.write(myjob.trim() + '<br>')
+
+        let ser = "Javascript is funny"
+        document.write(ser.search("is") + '<br>')
+
+        let rep = "I live in myanmar";
+        document.write(rep.replace('myanmar','England')+ '<br>');
+
+       document.write('I\'m Waillian Chit <br>');
+       document.write("I'm Waillian Chit, Height 5'11\"");
+
+
+
+
+        
+    </script>
+</body>
+</html>

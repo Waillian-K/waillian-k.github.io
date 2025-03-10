@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+</head>
+<body>
+    <h1>Property & Method</h1>
+    <h2 id="createTextNoteId"></h2>
+    <p id="setAtt">This is set SetAttribute</p>
+    <p id="getAtt" style="color: rgb(93, 17, 17); font-style: italic;" class="getAttribute">This is set GetAttribute</p>
+    <p id="removeAtt" style="color:red;" >This is remove attribute</p>
+    
+    <button onclick="createText()">Create Text Note</button>
+    <button onclick="createElementLesson()">Create Element Node</button>
+    <button onclick="createSetAtt()">CreateSetAttribute</button>
+    <button onclick="getAtt()">GetAttribute</button>
+    <button onclick="changeColor()">GetAttribute</button>
+    
+    <script>
+        function createText() {
+            // alert(`Hello!`);
+            let createTextNoteId = document.getElementById('createTextNoteId');
+            // createTextNoteId.innerHTML(`Create Text Note`)
+            let createText = document.createTextNode('Create Text Note');
+            createTextNoteId.appendChild(createText);
+        }
+
+        function createElementLesson(){
+            // alert("OK");
+            let h3 = document.createElement('h3');
+            // console.log(h3);
+            h3.innerText = 'This is Create Element'
+            console.log(h3);
+            document.body.appendChild(h3);
+        }
+
+        function createSetAtt(){
+            // alert("OK");
+            let setAttElem = document.getElementById('setAtt');
+            setAttElem.setAttribute('style','border:solid 1px black')
+        }
+
+        function getAtt() {
+            let getAttElem = document.getElementById('getAtt');
+            console.log(getAttElem.getAttribute('style','font-style')); 
+        }
+
+        function changeColor() {
+            let removeAttElem = document.getElementById('removeAtt');
+            let color = removeAttElem.getAttribute('style');
+            
+            removeAttElem.removeAttribute('style');
+        }
+
+        
+    </script>
+
+</body>
+</html>

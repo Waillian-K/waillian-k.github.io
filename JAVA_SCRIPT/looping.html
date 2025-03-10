@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+
+    
+</head>
+<body>
+    <h1>Looping Lessons</h1>
+    <script>
+        // for looping
+
+       /* for (initialize , condition ,update) {
+            //code
+            
+        }*/
+
+        
+        for(let i = 0 ; i < 3 ; i++ ){
+            document.write("<h1>Hello World</h1>");
+        }
+
+        let laptopsLists = ['Dell','lenovo','Asus', 'Hp' , 'Mac'];
+
+        for (let j = 0; j < laptopsLists.length; j++) {
+            document.write(laptopsLists[j] + '<br>');
+            
+            
+        }
+
+        for (let k = 1; k <= 19; k++) {
+            document.write(`<p> 13 x  ${k} = ${13*k} </p> `);
+            
+        }
+
+        //*
+        //**
+        //***
+        //****
+        //*****
+
+        for (let h = 0; h < 5; h++) {
+            for (let g = 0; g <= h ; g++) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+
+
+        for (let h = 0; h < 10; h++) {
+            for (let g = 0; g <= h ; g++) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+
+        //while looping
+        let m = 100;
+        while (m > 20) {
+            document.write(`Your number is ${m} <br>`);
+
+            m -=5;
+        }
+
+        //do while
+        /* do {
+            //code
+
+            //update
+        } while (condition);*/
+
+        let no = 90;
+        do {
+            document.write(`Your number is = ${no} <br>`);
+
+            no += 2;
+        } while (no < 100);
+
+        
+    </script>
+</body>
+</html>
