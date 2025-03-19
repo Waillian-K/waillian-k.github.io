@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <h1>Hello jQuery</h1>
+    <button id="click">Click</button>
+    <button id="show">show</button>
+
+    <!-- CDN - content delivery network -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+     <!-- local installation -->
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        // jQuery(selector).action()
+        // jQuery(document).ready(function(){})
+
+        // $("#click").click(function(){
+        //     // alert("jQuery is funny");
+        // })
+
+        // $(document).ready(function(){
+        //     $('#click').click(function(){
+        //         $('h1').hide(function(){
+        //             alert("Hidded h1");
+        //         })
+        //     })
+        // })
+        $(document).ready(function(){
+            $('#click').click(function(){
+                 $('h1').hide(function(){
+                    alert("H1 hidden");
+                    $('#show').show(function(){
+                        $('h1').show(function(){
+                            alert("H1 showed");
+                        });
+                    });
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
